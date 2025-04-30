@@ -1,0 +1,213 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#main {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#upper {
+    background-color: gray;
+    min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 40% 60%;
+}
+
+#overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+#text {
+    width: 100%;
+    padding: 0 10vw;
+    bottom: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#text>h1 {
+    font-weight: 400;
+    font-size: 6vw;
+}
+
+#textRight {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#textRight>p {
+    font-size: 12px;
+    width: 40%;
+}
+
+#lower {
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftHalf {
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftLeft {
+    min-height: inherit;
+    padding: 30px;
+    background-color: white;
+    width: 40%;
+}
+
+#leftLeft>p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#leftLeft img {
+    height: 280px;
+    object-fit: contain;
+    width: 300px;
+}
+
+#leftRight {
+    min-height: inherit;
+    background-color: aqua;
+    width: 60%;
+    background-image: url(https://images.unsplash.com/photo-1534584755047-2035948b9e63?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#rightHalf {
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rightLeft {
+    width: 35%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rightLeftUpper {
+    /* height: 50%; */
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 20px;
+    width: 100%;
+    background-color: orangered;
+    color: white;
+}
+
+#rightLeftUpper p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+#rightLeftLower {
+    /* height: 50%; */
+    flex-basis: 0;
+    flex-grow: 1;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1447875569765-2b3db822bec9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-color: brown;
+}
+
+#rightRight {
+    min-height: inherit;
+    background-color: #444;
+    color: white;
+    padding: 30px;
+    width: 65%;
+}
+
+.profile {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile #photo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(https://images.unsplash.com/photo-1673379324645-21a670fc74c8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+.profile p {
+    width: 86%;
+    font-size: 12px;
+}
+
+@media(max-width:500px) {
+    #overlay #text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #overlay #text #textRight {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #overlay #text #textRight p {
+        width: initial;
+        margin-top: 20px;
+    }
+
+    #text h1 {
+        font-size: 10vw;
+    }
+
+    #overlay #text #textRight #icons {
+        margin-top: 30px;
+    }
+
+    #lower {
+        flex-direction: column;
+    }
+
+    #leftHalf {
+        width: 100%;
+    }
+
+    #rightHalf {
+        width: 100%;
+    }
+}
